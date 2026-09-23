@@ -1,24 +1,134 @@
-<!-- Tarjeta 1 -->
-<a href="tps/trabajo-practico-1/" target="_blank" class="btn btn-primary">
-    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
-</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Académico | Emmanuel González</title>
+    <!-- Nombre corregido a estilos.css -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-<!-- Tarjeta 2 -->
-<a href="tps/trabajo-practico-2/" target="_blank" class="btn btn-primary">
-    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
-</a>
+    <!-- BARRA DE NAVEGACIÓN (FLEXBOX) -->
+    <header class="header">
+        <nav class="navbar">
+            
+            <!-- Identidad: Avatar de GitHub + Nombre -->
+            <div class="navbar-brand">
+                <img src="https://github.com/EmmanuelGnzlz.png" alt="Emmanuel González" class="profile-img">
+                <span class="owner-name">Emmanuel González</span>
+            </div>
 
-<!-- Tarjeta 3 -->
-<a href="tps/trabajo-practico-3/" target="_blank" class="btn btn-primary">
-    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
-</a>
+            <!-- Navegación: Solamente Links Externos -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://github.com/EmmanuelGnzlz" target="_blank" rel="noopener noreferrer" class="nav-link nav-external">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://drive.google.com/drive/folders/1qz4npk7A2v4CURZFXsWLWlvi2gFZ5w-7?usp=drive_link" target="_blank" rel="noopener noreferrer" class="nav-link nav-external">
+                        <i class="fa-brands fa-google-drive"></i> Drive
+                    </a>
+                </li>
+            </ul>
 
-<!-- Tarjeta 4 -->
-<a href="tps/trabajo-practico-4/" target="_blank" class="btn btn-primary">
-    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
-</a>
+        </nav>
+    </header>
 
-<!-- Tarjeta 5 -->
-<a href="tps/trabajo-practico-5/" target="_blank" class="btn btn-primary">
-    <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
-</a>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        
+        <!-- Encabezado del Portafolio -->
+        <section class="section header-intro">
+            <h1>Bienvenido a mi Portafolio Académico</h1>
+            <p>Aquí organizo y presento mis trabajos prácticos y proyectos realizados durante la cursada.</p>
+        </section>
+
+        <!-- Sección Trabajos Prácticos (CSS GRID) -->
+        <section class="section">
+            <h2>Trabajos Prácticos</h2>
+            <p class="section-desc">Listado de entregas y trabajos prácticos:</p>
+
+            <!-- Contenedor principal de la cuadrícula (Grid) -->
+            <div class="grid-projects">
+                
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-file-lines card-icon"></i>
+                        <h3>Trabajo Práctico 1</h3>
+                    </div>
+                    <p class="card-text">Descripción breve de los temas o actividades abarcadas en el TP1.</p>
+                    <div class="card-actions">
+                        <a href="tps/trabajo-practico-1/" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-file-lines card-icon"></i>
+                        <h3>Trabajo Práctico 2</h3>
+                    </div>
+                    <p class="card-text">Descripción breve de los temas o actividades abarcadas en el TP2.</p>
+                    <div class="card-actions">
+                        <a href="tps/trabajo-practico-2/" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-file-lines card-icon"></i>
+                        <h3>Trabajo Práctico 3</h3>
+                    </div>
+                    <p class="card-text">Descripción breve de los temas o actividades abarcadas en el TP3.</p>
+                    <div class="card-actions">
+                        <a href="tps/trabajo-practico-3/" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-file-lines card-icon"></i>
+                        <h3>Trabajo Práctico 4</h3>
+                    </div>
+                    <p class="card-text">Descripción breve de los temas o actividades abarcadas en el TP4.</p>
+                    <div class="card-actions">
+                        <a href="tps/trabajo-practico-4/" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 5 -->
+                <article class="card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-file-lines card-icon"></i>
+                        <h3>Trabajo Práctico 5</h3>
+                    </div>
+                    <p class="card-text">Descripción breve de los temas o actividades abarcadas en el TP5.</p>
+                    <div class="card-actions">
+                        <a href="tps/trabajo-practico-5/" target="_blank" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Trabajo Práctico
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
