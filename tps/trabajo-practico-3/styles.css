@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box; /* Incluye padding y border en el ancho/alto total */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina rellenos por defecto */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la familia tipográfica */
+}
+
+body {
+  background-color: #f4f4f6; /* Fondo gris claro general */
+  color: #333333; /* Color de texto base */
+  min-height: 100vh; /* Asegura un alto mínimo de pantalla completa */
+}
+
+.main-container {
+  max-width: 1200px; /* Ancho máximo del contenedor principal */
+  margin: 40px auto; /* Centrado horizontal con margen vertical de 40px */
+  background-color: #ebe4cf; /* Fondo beige suave para la tarjeta principal */
+  border-radius: 12px; /* Esquinas redondeadas del contenedor */
+  padding: 40px; /* Espaciado interno alrededor del contenido */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave de elevación */
+}
+
+.section-title {
+  text-align: center; /* Alineación centrada del título */
+  font-size: 24px; /* Tamaño de fuente del título */
+  letter-spacing: 1.5px; /* Espaciado extendido entre caracteres */
+  margin-bottom: 32px; /* Separación inferior respecto al contenedor de tarjetas */
+}
+
+.products-flex {
+  display: flex; /* Activa la disposición Flexbox */
+  flex-direction: row; /* Orienta los elementos en una fila horizontal */
+  justify-content: space-between; /* Distribuye las tarjetas separándolas al máximo entre sí */
+  align-items: stretch; /* Estira las tarjetas para compartir la misma altura */
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente fila si no entran */
+  row-gap: 24px; /* Espaciado entre filas si las tarjetas se envuelven */
+}
+
+.product-card {
+  width: 240px; /* Ancho fijo para cada tarjeta */
+  display: flex; /* Flexbox interno para organizar elementos en columna */
+  flex-direction: column; /* Organiza los elementos verticales en columna */
+  align-items: center; /* Centra los elementos en el eje horizontal interno */
+  text-align: center; /* Alineación de texto centrada */
+  padding: 24px 20px; /* Padding superior/inferior de 24px y lateral de 20px */
+  border-radius: 12px; /* Bordes redondeados para la tarjeta */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra base de la tarjeta */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transición suave para eventos hover */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta 5px hacia arriba */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Color Tarjeta 1 (Turquesa) */
+.card-turquoise {
+  background-color: #55b3b1; /* Fondo color turquesa */
+  color: #ffffff; /* Texto blanco */
+}
+
+.card-turquoise .add-to-cart-btn {
+  background-color: #236869; /* Color base del botón turquesa */
+}
+
+.card-turquoise .add-to-cart-btn:hover {
+  background-color: #184c4d; /* Color del botón al pasar el cursor */
+}
+
+/* Color Tarjeta 2 (Azul Marino Oscuro) */
+.card-navy {
+  background-color: #1a2b4c; /* Fondo azul marino */
+  color: #ffffff; /* Texto blanco */
+}
+
+.card-navy .add-to-cart-btn {
+  background-color: #2c4373; /* Color base del botón azul */
+}
+
+.card-navy .add-to-cart-btn:hover {
+  background-color: #1e3054; /* Color del botón azul al pasar el cursor */
+}
+
+/* Color Tarjeta 3 (Negro / Gris Muy Oscuro) */
+.card-black {
+  background-color: #1a1a1a; /* Fondo gris muy oscuro / negro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.card-black .add-to-cart-btn {
+  background-color: #333333; /* Color base del botón oscuro */
+}
+
+.card-black .add-to-cart-btn:hover {
+  background-color: #4a4a4a; /* Color del botón oscuro al pasar el cursor */
+}
+
+/* Color Tarjeta 4 (Gris Carbón / Grafito) */
+.card-charcoal {
+  background-color: #34495e; /* Fondo gris carbón */
+  color: #ffffff; /* Texto blanco */
+}
+
+.card-charcoal .add-to-cart-btn {
+  background-color: #1f2d3d; /* Color base del botón carbón */
+}
+
+.card-charcoal .add-to-cart-btn:hover {
+  background-color: #141d27; /* Color del botón carbón al pasar el cursor */
+}
+
+.card-image-container {
+  width: 100%; /* Ocupa todo el ancho de la tarjeta */
+  height: 160px; /* Altura fija para el área de imagen */
+  display: flex; /* Flexbox para centrar la imagen */
+  justify-content: center; /* Centrado horizontal de la imagen */
+  align-items: center; /* Centrado vertical de la imagen */
+  margin-bottom: 16px; /* Margen inferior antes del título */
+}
+
+.product-image {
+  max-width: 100%; /* Limita el ancho al contenedor */
+  max-height: 100%; /* Limita el alto al contenedor */
+  object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+}
+
+.product-title {
+  font-size: 17px; /* Tamaño del texto del título */
+  font-weight: 700; /* Peso de fuente negrita */
+  margin-bottom: 8px; /* Separación previa al precio */
+}
+
+.product-price {
+  font-size: 22px; /* Tamaño destacado para el precio */
+  font-weight: 800; /* Peso de fuente extra negrita */
+  margin-bottom: 12px; /* Separación previa a la descripción */
+}
+
+.product-description {
+  font-size: 13px; /* Tamaño de fuente para la descripción */
+  line-height: 1.4; /* Altura de línea para mejorar legibilidad */
+  margin-bottom: 20px; /* Separación inferior hacia el botón */
+  flex-grow: 1; /* Ocupa espacio disponible empujando el botón al fondo */
+}
+
+.add-to-cart-btn {
+  width: 100%; /* Ancho completo dentro de la tarjeta */
+  padding: 12px 16px; /* Relleno interno superior/inferior y lateral */
+  border: none; /* Elimina bordes por defecto */
+  border-radius: 6px; /* Bordes redondeados del botón */
+  color: #ffffff; /* Texto blanco */
+  font-weight: 700; /* Texto en negrita */
+  font-size: 13px; /* Tamaño de texto */
+  letter-spacing: 0.5px; /* Espaciado leve entre letras */
+  cursor: pointer; /* Cambia el puntero al pasar por encima */
+  transition: background-color 0.2s ease; /* Transición suave al cambiar de color */
+}
